@@ -7,9 +7,11 @@ import { Component } from '@angular/core';
 })
 export class FooterComponent {
 
-
-
-  classObject = {
-    
-  }
+  footerInfo = {
+    year: new Date().getFullYear(),
+    copyright: '©',
+    author: 'Mario',
+    siteName: 'MarioM6',
+  };
+  
 }
