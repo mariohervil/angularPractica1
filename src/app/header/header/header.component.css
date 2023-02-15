@@ -1,0 +1,12 @@
+
+
+.mat-slide-toggle-thumb {
+  content: '\e51c';
+  font-family: 'Material Icons';
+  font-size: 24px;
+  color: red;
+}
+
+.mat-slide-toggle-bar {
+  background-color: #ccc;
+}

@@ -9,6 +9,8 @@ import { BodyComponent } from './body/body/body.component';
 import { NavbarComponent } from './navbar/navbar/navbar.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { HttpClientModule } from '@angular/common/http';
+import {MatSlideToggleModule} from "@angular/material/slide-toggle";
+import {MatIconModule} from "@angular/material/icon";
 
 
 @NgModule({
@@ -24,7 +26,9 @@ import { HttpClientModule } from '@angular/common/http';
     AppRoutingModule,
     BrowserAnimationsModule,
     MatTableModule,
-    HttpClientModule
+    HttpClientModule,
+    MatSlideToggleModule,
+    MatIconModule
   ],
   providers: [],
   bootstrap: [AppComponent]

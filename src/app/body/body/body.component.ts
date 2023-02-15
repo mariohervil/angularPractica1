@@ -21,7 +21,7 @@ export class BodyComponent implements OnInit {
       .subscribe((data) => {
         this.jsonData = data;
         //this.jsonData.toString().replace('-', '_');
-        console.log(this.jsonData);
+        //console.log(this.jsonData);
         this.displayedColumns = ['name', 'symbol', 'atomic_mass', 'density', 'discovered_by', 'category'];
         this.dataSource = new MatTableDataSource(this.jsonData.elements);
       });
