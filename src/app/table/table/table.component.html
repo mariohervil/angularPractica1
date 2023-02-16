@@ -1,0 +1,43 @@
+<table mat-table [dataSource]="dataSource">
+  <!-- Column Definition -->
+  <ng-container matColumnDef="name">
+    <th mat-header-cell *matHeaderCellDef> Name</th>
+    <td mat-cell *matCellDef="let element"
+        [ngStyle]="{'background-color': '#' + element['cpk-hex']}">
+      {{element.name}}
+    </td>
+  </ng-container>
+  <ng-container matColumnDef="symbol">
+    <th mat-header-cell *matHeaderCellDef> Symbol</th>
+    <td mat-cell *matCellDef="let element">
+      {{element.symbol}}</td>
+  </ng-container>
+  <ng-container matColumnDef="atomic_mass">
+    <th mat-header-cell *matHeaderCellDef> Atomic Mass</th>
+    <td mat-cell *matCellDef="let element">
+      {{element.atomic_mass}}</td>
+  </ng-container>
+  <ng-container matColumnDef="density">
+    <th mat-header-cell *matHeaderCellDef> Density</th>
+    <td mat-cell *matCellDef="let element">
+      {{element.density}}</td>
+  </ng-container>
+  <ng-container matColumnDef="discovered_by">
+    <th mat-header-cell *matHeaderCellDef> Discovered By</th>
+    <td mat-cell *matCellDef="let element">
+      {{element.discovered_by}}</td>
+  </ng-container>
+
+  <ng-container matColumnDef="category">
+    <th mat-header-cell *matHeaderCellDef> Category</th>
+    <td mat-cell *matCellDef="let element">
+      {{element.category}}</td>
+  </ng-container>
+
+  <!-- Table Header -->
+  <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+
+  <!-- Table Body -->
+  <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+
+</table>
