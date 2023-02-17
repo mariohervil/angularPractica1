@@ -1,4 +1,7 @@
 
+* {
+  background-color: #333 !important;
+}
 
 .mat-slide-toggle-thumb {
   content: '\e51c';
@@ -9,4 +12,9 @@
 
 .mat-slide-toggle-bar {
   background-color: #ccc;
+}
+
+div {
+  color: #333;
+  height: 15vh;
 }

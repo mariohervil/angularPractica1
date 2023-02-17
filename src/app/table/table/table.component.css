@@ -1,6 +1,7 @@
-table{
+table {
   width: 100%;
 }
+
 .mat-column-name {
   text-align: center;
   white-space: unset !important;
@@ -32,6 +33,7 @@ table{
   -webkit-hyphens: auto;
   hyphens: auto;
 }
+
 .mat-column-category {
   white-space: unset !important;
   flex: 0 0 28% !important;
@@ -46,3 +48,23 @@ table{
   -webkit-hyphens: auto;
   hyphens: auto;
 }
+
+
+
+
+table {
+  position: relative;
+  width: 350px;
+  height: 250px;
+  background: white;
+  border-radius: 0% 0% 0% 0% / 0% 0% 0% 0% ;
+  color: white;
+  box-shadow: 20px 20px rgba(0,0,0,.15);
+  transition: all .4s ease;
+}
+table:hover {
+  border-radius: 0% 0% 50% 50% / 0% 0% 5% 5% ;
+  box-shadow: 10px 10px rgba(0,0,0,.25);
+}
+
+

@@ -15,6 +15,7 @@ import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
 import {TableComponent} from './table/table/table.component';
 import {CarouselComponent} from './carousel/carousel/carousel.component';
 import { PoketableComponent } from './poketable/poketable/poketable.component';
+import {FormsModule} from "@angular/forms";
 
 
 @NgModule({
@@ -28,16 +29,17 @@ import { PoketableComponent } from './poketable/poketable/poketable.component';
     CarouselComponent,
     PoketableComponent
   ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule,
-    BrowserAnimationsModule,
-    MatTableModule,
-    HttpClientModule,
-    MatSlideToggleModule,
-    MatIconModule,
-    NgbModule
-  ],
+    imports: [
+        BrowserModule,
+        AppRoutingModule,
+        BrowserAnimationsModule,
+        MatTableModule,
+        HttpClientModule,
+        MatSlideToggleModule,
+        MatIconModule,
+        NgbModule,
+        FormsModule
+    ],
   providers: [],
   bootstrap: [AppComponent]
 })

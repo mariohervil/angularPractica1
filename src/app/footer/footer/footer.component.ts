@@ -10,8 +10,9 @@ export class FooterComponent {
   footerInfo = {
     year: new Date().getFullYear(),
     copyright: '©',
-    author: 'Mario',
+    author: 'Mario Hernandez',
     siteName: 'MarioM6',
+    email: 'mario@gmail.com',
   };
-  
+
 }
