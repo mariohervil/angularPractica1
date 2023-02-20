@@ -1,5 +1,9 @@
-<div class="row">
-  <h1>A</h1>
-  <h1>A</h1>
-  <h1>A</h1>
-</div>
+<nav class="row justify-content-evenly"
+     [ngClass]="{ 'light-mode': lightMode.lightModeOn, 'dark-mode': !lightMode.lightModeOn}">
+  <span class="col-md-1" style="cursor: pointer">
+    <a href="#table" class="text-decoration-none col-2 fs-2 fw-bold" style="color:white">Table</a>
+  </span>
+  <span class="col-md-1" style="cursor: pointer">
+    <a href="#carousel" class="text-decoration-none col-2 fs-2 fw-bold" style="color:white">Carousel</a>
+  </span>
+</nav>

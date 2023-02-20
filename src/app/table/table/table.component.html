@@ -1,4 +1,5 @@
-<table mat-table [dataSource]="dataSource">
+<table mat-table [dataSource]="dataSource" id="table"
+       [ngClass]="{ 'light-mode': lightMode.lightModeOn, 'dark-mode': !lightMode.lightModeOn}">
   <!-- Column Definition -->
   <ng-container matColumnDef="name">
     <th mat-header-cell *matHeaderCellDef> Name</th>

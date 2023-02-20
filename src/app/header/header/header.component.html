@@ -3,11 +3,13 @@
 <link rel="stylesheet"
       href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0"/>
 
-<div>
-  <mat-icon matSlideToggleLabel style="color:white">brightness_1</mat-icon>
-  <mat-slide-toggle [ngClass]="'mat-slide-toggle-thumb'" [ngModel]="darkModeBoolean">
-    <mat-icon matSlideToggleLabel style="color:white">brightness_2</mat-icon>
-    <span style="color:white">Slide Toggle Label</span>
+<div class="container" [ngClass]="{ 'light-mode': lightMode.lightModeOn, 'dark-mode': !lightMode.lightModeOn}">
+
+  <h1>Mario Angular App</h1>
+  <mat-slide-toggle [checked]="true" (change)="toggleLightMode()"
+                    [ngClass]="'mat-slide-toggle-thumb' + { 'light-mode': lightMode.lightModeOn , 'dark-mode': !lightMode.lightModeOn}">
+    <mat-icon matSlideToggleLabel style="color:white" [ngClass]="{ 'light-mode': lightMode.lightModeOn}">brightness_2
+    </mat-icon>
   </mat-slide-toggle>
-  <app-navbar></app-navbar>
+  <app-navbar [ngClass]="{ 'light-mode': lightMode.lightModeOn, 'dark-mode': !lightMode.lightModeOn}"></app-navbar>
 </div>

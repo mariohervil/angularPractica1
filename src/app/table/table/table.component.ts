@@ -1,6 +1,7 @@
 import {Component, OnInit} from '@angular/core';
 import {MatTableDataSource} from "@angular/material/table";
 import {HttpClient} from "@angular/common/http";
+import {LightModeService} from "../../lightMode/light-mode.service";
 
 @Component({
   selector: 'elements-table',
@@ -8,10 +9,10 @@ import {HttpClient} from "@angular/common/http";
   styleUrls: ['./table.component.css']
 })
 export class TableComponent implements OnInit {
-  constructor(private http: HttpClient) {
+  constructor(private http: HttpClient, public lightMode: LightModeService) {
 
   }
-
+ 
   jsonData: any;
   displayedColumns: any;
   dataSource: any;

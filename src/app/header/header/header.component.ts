@@ -1,4 +1,5 @@
 import {Component} from '@angular/core';
+import {LightModeService} from '../../lightMode/light-mode.service'
 
 @Component({
   selector: 'app-header',
@@ -6,13 +7,12 @@ import {Component} from '@angular/core';
   styleUrls: ['./header.component.css']
 })
 export class HeaderComponent {
-  darkMode = {
-    backgroundColor: 'black',
-    color: 'white'
-  };
-  darkModeBoolean = true;
 
-  onClick() {
-    this.darkModeBoolean = !this.darkModeBoolean;
+  constructor(public lightMode: LightModeService) {
+  }
+
+  toggleLightMode() {
+    this.lightMode.toggleLightMode();
+    console.log(this.lightMode)
   }
 }

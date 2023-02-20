@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import {LightModeService} from "../../lightMode/light-mode.service";
 
 @Component({
   selector: 'app-footer',
@@ -6,7 +7,8 @@ import { Component } from '@angular/core';
   styleUrls: ['./footer.component.css']
 })
 export class FooterComponent {
-
+  constructor(public lightMode: LightModeService) {
+  }
   footerInfo = {
     year: new Date().getFullYear(),
     copyright: '©',

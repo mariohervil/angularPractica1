@@ -50,21 +50,36 @@ table {
 }
 
 
-
-
 table {
   position: relative;
   width: 350px;
   height: 250px;
   background: white;
-  border-radius: 0% 0% 0% 0% / 0% 0% 0% 0% ;
-  color: white;
-  box-shadow: 20px 20px rgba(0,0,0,.15);
-  transition: all .4s ease;
-}
-table:hover {
-  border-radius: 0% 0% 50% 50% / 0% 0% 5% 5% ;
-  box-shadow: 10px 10px rgba(0,0,0,.25);
+  margin-bottom: 100px;
 }
 
 
+.light-mode {
+  color: black !important;
+  background-color: white !important;
+  border-color: black !important;
+
+}
+
+.dark-mode {
+  background-color: #333 !important;
+  color: navajowhite !important;
+  border-color: white !important;
+}
+
+
+.mat-mdc-table tbody, .mat-mdc-table tfoot,
+.mat-mdc-table thead, .mat-mdc-cell,
+.mat-mdc-footer-cell, .mat-mdc-header-row,
+.mat-mdc-row, .mat-mdc-footer-row,
+.mat-mdc-table .mat-mdc-header-cell {
+
+  color: inherit;
+  border-color: inherit;
+
+}

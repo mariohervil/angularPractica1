@@ -1,7 +1,5 @@
-<ngb-carousel *ngIf="images">
-  <div>
+<ngb-carousel *ngIf="images" id="carousel" class="text-center user-select-none">
 
-  </div>
   <ng-template ngbSlide *ngFor="let image of images; index as i">
     <div class="picsum-img-wrapper">
       <img [src]="image" alt="Random slide"/>

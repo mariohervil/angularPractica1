@@ -37,9 +37,11 @@ p {
   color: white;
   font-weight: 600;
 }
-*{
+
+* {
   background-color: #333 !important;
 }
+
 .toolbar img {
   margin: 0 16px;
 }
@@ -300,8 +302,19 @@ footer {
   height: 8vh;
   background-color: #464646;
   vertical-align: middle;
+  border-top: 1px solid;
 }
 
+.light-mode {
+
+  border-color: black !important;
+
+}
+
+.dark-mode {
+
+  border-color: white !important;
+}
 
 @media screen and (max-width: 575px) {
   svg#rocket-smoke {
